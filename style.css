@@ -1,0 +1,287 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'inter', sans-serif;
+  font-size: 1.2rem;
+}
+
+/* ------------------ GLOBAL GOES HERE ------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'inter', sans-serif;
+  font-style: normal;
+}
+
+h1{
+  Font Size: 70px;
+  font-weight: 500;
+  Line Height: 80px;
+  letter-spacing: -2px;
+  color: #000000;
+}
+
+h2{
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 62px;
+  letter-spacing: -1.5px;
+  color: #000000;
+}
+
+h3{
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: -0.583333px;
+}
+
+li{
+  list-style: none;
+  padding-right: 30px;
+}
+
+.container{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* HEADER */
+
+header{
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+header nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul a{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  letter-spacing: -0.5px;
+  color: #4353FF;
+}
+
+nav ul li:last-child a{
+  color: #4353FF;
+  background-color: rgba(67,83,255,0.06);
+  border: #4353FF solid 1px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* HERO SECTION */
+.hero{
+  background: #FFFFFF;
+}
+
+.hero .grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+}
+
+.hero .hero-title h1{
+  font-size: 70px;
+  font-weight: 500;
+  font-family: 'inter', sans-serif;
+  padding-top: 40px;
+  line-height: 80px;
+  margin-bottom: 25px;
+}
+
+.hero .hero-title h3{
+  font-family: 'inter', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.4px;
+  color: rgba(0,0,0,0.5);
+  margin-bottom: 40px;
+}
+
+.hero .btn-hero{
+  font-family: 'inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.625px;
+  background: #4353FF;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 18px;
+}
+
+.hero .btn-hero span{
+  color: #d2d2d2;
+}
+
+.logos{
+  margin-top: 118px;
+  margin-bottom: 56px;
+}
+
+/* ABOUT SECTION */
+
+.about{
+  background: #FFF8F6;
+  padding: 60px 165px;
+}
+
+.about .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  align-content: space-between;
+}
+
+.about h3{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.5px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.about p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.4px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+/* SERVICES SECTION */
+
+.services .grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  margin: 100px auto;
+}
+
+.services h2{
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -1.5px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.services h4{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.5px;
+  color: #4353FF;
+  margin-bottom: 20px;
+}
+
+.services .grid-item p:first-child{
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.4px;
+  color: rgba(0,0,0,0.5);
+  margin-bottom: 53px;
+}
+
+.feature-item{
+  padding-bottom: 23px;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.feature-item p{
+  margin-bottom: 0;
+}
+
+.services .features #title-blue{
+  display: inline-block;
+  padding-left: 22px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.583333px;
+  color: #4353FF;
+  margin-bottom: 23px;
+}
+
+.services .features p{
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.333333px;
+  color: rgba(0, 0, 0, 0.5);
+
+}
+
+.services .features .fas{
+  color: #4353FF;
+}
+
+.services .features h3{
+  display: inline-block;
+  padding-left: 22px;
+}
+
+.servies .feature-item h3{
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.583333px;
+}
+
+
+/* BENEFITS SECTION */
+
+.benefits .grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+}
+
+.benefits .grid .illustration{
+  order: -1;
+}
+
+.benefits .flex-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 160px;
+}
+
+.benefits .flex-container li{
+  padding-left: 30px;
+}
